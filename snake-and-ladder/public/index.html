@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme|Black+Ops+One|Bungee|Bungee+Shade|Creepster|Ewert|Fruktur|Gravitas+One|Monoton|Rubik:900&display=swap" rel="stylesheet">
+
+
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <title>Hello, world!</title>
+  </head>
+  <style>
+    body{
+      background-color: black;
+    }
+    .image{
+      z-index:2;
+      opacity:0.4;
+      position :relative;
+      overflow: hidden;
+    }
+    #wrapper {
+    width: 696px;
+    height: 595px;
+    background-size: 575px 501px;
+    background-origin: content-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://completewellbeing.com/wp-content/uploads/2011/11/100-snakes-ladders.jpg);
+    }
+.row {
+    width: auto;
+    height: auto;
+}
+.square {
+    width: 59px;
+    height: 50px;
+    /* display: inline-block; */
+    float: left;
+}
+.mirror {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.height{
+  font-size: 50px;
+}
+.icon{
+ font-size: 37px;
+ color:black; 
+}
+#container {
+    width: 50%;
+    height: 50%;
+    top: 0;
+    position: absolute;
+    visibility: hidden;
+    display: none;
+    background-color: rgba(22,22,22,0.5); /* complimenting your modal colors */
+}
+#container:target {
+    visibility: visible;
+    display: block;
+}
+.reveal-modal {
+    position: relative;
+    margin: 0 auto;
+    top: 25%;
+}
+  </style>
+  <body>
+    <div id="root"></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- <script>
+    var rows = 10;
+var columns = 10;
+var $row = $("<div />", {
+    class: 'row'
+});
+var $square = $("<div />", {
+    class: 'square'
+});
+
+$(document).ready(function () {
+    //add columns to the the temp row object
+    for (var i = 0; i < columns; i++) {
+        $row.append($square.clone());
+    }
+    //clone the temp row object with the columns to the wrapper
+    for (var i = 0; i < rows; i++) {
+        $("#wrapper").append($row.clone());
+    }
+});
+  </script> -->
+  </body>
+</html>
